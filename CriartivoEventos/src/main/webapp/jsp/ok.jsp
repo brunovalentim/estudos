@@ -1,6 +1,6 @@
 <%-- 
     Document   : ok
-    Created on : Aug 19, 2012, 3:35:04 PM
+    Created on : Aug 19, 2012, 5:23:35 PM
     Author     : brunovalentim
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Ok!</h1>
+        <h1>Hello World!</h1>
     </body>
 </html>
