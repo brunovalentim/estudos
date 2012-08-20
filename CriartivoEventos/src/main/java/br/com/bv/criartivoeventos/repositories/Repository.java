@@ -5,7 +5,6 @@
 package br.com.bv.criartivoeventos.repositories;
 
 import br.com.bv.criartivoeventos.models.AbstractEntity;
-import java.lang.reflect.ParameterizedType;
 import org.hibernate.Session;
 
 /**

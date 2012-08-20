@@ -16,7 +16,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
+import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.classic.Session;
 
 /**
@@ -43,7 +43,7 @@ public class BancoFilter implements Filter {
             log("BancoFilter:DoBeforeProcessing");
         }
 
-        this.sessionFactory = new Configuration().configure().buildSessionFactory();
+        this.sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
         this.session = this.sessionFactory.openSession();
         this.transaction = this.session.beginTransaction();
         
@@ -60,7 +60,7 @@ public class BancoFilter implements Filter {
         try {
             this.transaction.commit();
         } catch (Exception e) {
-            this.transaction.rollback();;
+            this.transaction.rollback();
         }finally{            
             this.session.close();
         }
