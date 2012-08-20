@@ -13,11 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class IndexController {
-    
-    @RequestMapping("index")
-    public String index()
-    {
-        
-        return "ok";
+   
+    @RequestMapping("login")
+    public String login()
+    {        
+        return "login/login";
+    }
+    @RequestMapping("cadastro/usuario")
+    public String cadastroUsuario()
+    {        
+        return "cadastro/usuario";
     }
 }

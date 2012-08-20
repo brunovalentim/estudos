@@ -13,7 +13,7 @@
     <body>
         <jsp:include page="jsp/templates/header.jsp" /> 
         <div style="width: 100%;height: 500px;">
-
+            <a href="cadastro/usuario">login</a> 
         </div>
         <jsp:include page="jsp/templates/footer.jsp" /> 
     </body>
