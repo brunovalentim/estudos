@@ -1,0 +1,26 @@
+/* 
+    Document   : style
+    Created on : Aug 20, 2012, 7:35:09 PM
+    Author     : brunovalentim
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{ 
+    font: 62.5% "Trebuchet MS", sans-serif; margin: 40px;
+} 
+#header{
+    border: solid;
+    width: 150px;
+    height: 150px;
+    top: 0;
+}
+#footer{
+    border: solid;
+    width: 100%;
+    height: 160px;
+    bottom: 0;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+}

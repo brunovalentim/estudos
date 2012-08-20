@@ -5,23 +5,31 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<form:form  action="adicionar" method="post"  commandName="usuario">
-    <form:errors path="*" cssClass="color: red" />
+<link type="text/css" href="../../css/style.css" rel="stylesheet" />
+<link type="text/css" href="../../css/ui-darkness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript">
+    $(function(){        
+        $("a").button();
+    });
+</script> 
+<form:form  action="adicionar" method="post"  commandName="usuario">    
     Entre!
     <div>
         <form:label path="nome">Nome:</form:label>
-        <form:input path="nome" max="100"/>
-        <form:errors path="nome" cssClass="color: red"  />    
+        <form:input path="nome" maxlength="100"/>
+        <form:errors path="nome" cssClass="erro"  />    
     </div>
     <div>
         <form:label path="email">E-mail:</form:label>
-        <form:input path="email" max="20" />
-        <form:errors path="email" cssClass="color: red"/>    
+        <form:input path="email" maxlength="20" />
+        <form:errors path="email" cssClass="erro"/>    
     </div>
     <div>
         <form:label path="senha" >Senha:</form:label>
-        <form:input path="senha" max="10"/>
-        <form:errors path="senha" cssClass="color: red"/>  
+        <form:input path="senha" maxlength="10"/>
+        <form:errors path="senha" cssClass="erro"/>  
     </div>    
     <div>
         <input type="submit" value="Adicionar"/>

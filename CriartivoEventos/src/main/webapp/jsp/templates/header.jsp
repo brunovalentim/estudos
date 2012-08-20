@@ -4,10 +4,18 @@
     Author     : brunovalentim
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div id="container" style=" border: solid;width: 100%;height: 160px;top: 0;">
-    <div id="header" style=" border: solid;width: 150px;height: 150px;">
-<!--        <img src="images/logo.jpg" style="width: 500px;height: 500px;" />    -->
-    </div>    
+<link type="text/css" href="../../css/style.css" rel="stylesheet" />
+<link type="text/css" href="../../css/ui-darkness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript">
+    $(function(){        
+        $("a").button();
+    });
+</script> 
+<div id="header" >
+    <img id="logo" src="images/logo.jpg" />
+    <a href="#">Teste Jquery</a>
 </div>
 
 
